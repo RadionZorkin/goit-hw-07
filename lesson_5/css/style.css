@@ -1,0 +1,98 @@
+/* Скидання стилів */
+/* @import url("reset.css"); */
+@import url(fonts.css);
+
+body {
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+	line-height: 1.47;
+	color: #7d7d7d;
+}
+
+h2 {
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+	font-size: 30px;
+	color: #37393f;
+	line-height: 1.27;
+}
+h3 {
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 1.27;
+}
+.special-suptitle {
+	color: #6b77e5;
+}
+
+.special-list {
+	list-style-type: decimal-leading-zero;
+	font-weight: 500;
+}
+ul {
+	font-weight: 500;
+}
+.my-block {
+	font-family: "Christmasscriptc";
+}
+
+.my-block h3 {
+	font-family: "Intro", sans-serif;
+	font-weight: 400;
+	text-align: center;
+}
+
+.paragraph-1 {
+	font-size: 30px;
+	font-style: oblique;
+	font-weight: 400;
+	text-align: end;
+}
+.paragraph-2 {
+	color: #6b77e5;
+	text-align: center;
+	text-decoration: underline;
+}
+.paragraph-3 {
+	font-family: "Poppins", sans-serif;
+	text-align: justify;
+	text-decoration: overline;
+}
+.paragraph-4 {
+	text-shadow: -5px -2px 2px green;
+	text-transform: capitalize;
+	font-size: 30px;
+}
+.paragraph-4 span {
+	text-transform: none;
+}
+.paragraph-5 {
+	text-transform: uppercase;
+	word-spacing: 55px;
+}
+
+.paragraph-5 span {
+	text-transform: lowercase;
+}
+.paragraph-6 {
+	font-family: "Inter";
+	text-shadow:
+		5px 2px 2px yellow,
+		-5px -2px 2px green;
+	line-height: 40px;
+	white-space: nowrap;
+}
+.paragraph-7 {
+	line-height: 1.8;
+	letter-spacing: 15px;
+	text-align: right;
+}
+
+.my-block p span {
+	text-decoration: line-through;
+	color: red;
+}
+.my-block p {
+	text-indent: 25px;
+}

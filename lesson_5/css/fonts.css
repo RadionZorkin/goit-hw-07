@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,600,700&display=swap");
+
+@font-face {
+	font-family: "Intro";
+	src:
+		url("../fonts/intro.woff") format("woff"),
+		url("../fonts/intro.woff2") format("woff2");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Christmasscriptc";
+	src:
+		url("../fonts/christmasscriptc.woff") format("woff"),
+		url("../fonts/christmasscriptc.woff2") format("woff2");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}

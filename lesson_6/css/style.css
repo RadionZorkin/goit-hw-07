@@ -1,0 +1,134 @@
+/* Скидання стилів */
+@import url("reset.css");
+@import url(fonts.css);
+
+body {
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+}
+.header {
+	margin-bottom: 50px;
+}
+.main {
+	margin-bottom: 50px;
+}
+.managment-consulting {
+	margin: 0 auto 50px;
+	max-width: 692px;
+}
+.block-meeting {
+	text-align: center;
+	margin-bottom: 37px;
+}
+.img-meeting {
+}
+p {
+	color: #7d7d7d;
+	line-height: 1.47;
+}
+
+h1 {
+	font-size: 30px;
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	line-height: 1.27;
+	margin-bottom: 10px;
+}
+
+h1 + p {
+	margin-bottom: 47px;
+}
+
+h3 {
+	font-family: "Poppins";
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.27;
+}
+.special-subtitle {
+	margin-bottom: 14px;
+	color: #6b77e5;
+}
+.special-subtitle + p {
+	margin-bottom: 40px;
+}
+.img-benefits {
+	display: inline-block;
+	max-width: 350px;
+	margin-right: 13px;
+	vertical-align: top;
+}
+.img-benefits img {
+	width: 100%;
+}
+.text-benefits {
+	display: inline-block;
+	max-width: 332px;
+}
+.text-benefits > h2 {
+	color: #37393f;
+	font-family: "Poppins";
+	font-size: 25px;
+	font-weight: 600;
+	line-height: 1.27;
+	margin-bottom: 15px;
+}
+.text-benefits > h3 {
+	color: #40ddb6;
+	margin-bottom: 23.5px;
+}
+.text-benefits li {
+	font-family: "Inter";
+	list-style-type: disc;
+	margin-left: 20px;
+	margin-bottom: 35px;
+	line-height: 1.27;
+
+	color: #7d7d7d;
+}
+
+.what-we-do {
+	max-width: 1169px;
+	margin: 0 auto;
+	font-size: 0;
+}
+.what-we-do-block-text {
+	padding: 21px 0px 21px 0px;
+	margin-right: 38px;
+	max-width: 563px;
+	display: inline-block;
+	vertical-align: top;
+}
+.what-we-do-subtitle {
+	text-transform: uppercase;
+	color: #d06b00;
+	font-family: "Inter";
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 1.25;
+	margin-bottom: 13px;
+}
+.what-we-do-title {
+	text-transform: capitalize;
+	color: #0e333d;
+	font-family: "DM Serif Text", serif;
+	font-size: 59px;
+	line-height: 1.46;
+	margin-bottom: 25px;
+}
+.what-we-do-text {
+	color: #474747;
+	font-size: 20px;
+	line-height: 1.8;
+}
+.what-we-do-img {
+	display: inline-block;
+	min-width: 567px;
+	font-size: 0;
+}
+.what-we-do-img img {
+	width: 273px;
+}
+.jewels-img-1 {
+	margin-right: 22px;
+}
