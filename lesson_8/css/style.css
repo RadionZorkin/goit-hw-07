@@ -263,6 +263,9 @@ body {
 	letter-spacing: 1px;
 	padding-bottom: 50px;
 }
+.everyday-fashion-block-img1-text span {
+	text-transform: uppercase;
+}
 .everyday-fashion-block-img1-button {
 	padding: 12px 44px;
 	border-radius: 8px;
