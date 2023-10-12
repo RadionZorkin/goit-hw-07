@@ -231,6 +231,7 @@ body {
 .everyday-fashion {
 	max-width: 1240px;
 	margin-bottom: 150px;
+	margin: 0 auto;
 }
 .everyday-fashion-block {
 	font-size: 0px;
@@ -252,10 +253,10 @@ body {
 	line-height: 1.47;
 	letter-spacing: 0.208px;
 	padding-bottom: 30px;
+	text-transform: uppercase;
 }
 .everyday-fashion-block-img1-text {
 	color: #fff;
-
 	font-family: "Causten";
 	font-size: 20px;
 	font-weight: 300;
@@ -273,6 +274,7 @@ body {
 	font-weight: 600;
 	width: 168px;
 	height: 46px;
+	text-transform: capitalize;
 }
 
 .everyday-fashion-block-img2 {
