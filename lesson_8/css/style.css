@@ -1,3 +1,284 @@
 /* Скидання стилів */
 @import url(reset.css);
 @import url(fonts.css);
+
+body {
+	font-family: "Inter";
+	font-size: 18px;
+	line-height: 1.46;
+}
+
+.welcome {
+	max-width: 613px;
+	margin: 0 auto;
+	margin-bottom: 150px;
+}
+
+.welcome-subtitle {
+	font-size: 18px;
+	text-transform: capitalize;
+	font-weight: 500;
+	max-width: 593px;
+	background: url(../img/box.png) no-repeat 0 6px / 12px;
+	padding-left: 18px;
+	margin-bottom: 16px;
+}
+.welcome-title {
+	color: #37393f;
+	text-transform: capitalize;
+	font-family: Poppins;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.21;
+	max-width: 416px;
+	margin-bottom: 20px;
+}
+.welcome-text {
+	color: #7d7d7d;
+	margin-bottom: 20px;
+}
+.welcome-text p {
+	margin-bottom: 15px;
+}
+.welcome-list {
+	color: #37393f;
+	font-family: Poppins;
+	font-size: 20px;
+	line-height: 1.65;
+	margin-bottom: 43px;
+}
+.welcome-list li {
+	background: url(../img/mark.svg) no-repeat 0 3px / 27px;
+	margin-bottom: 23px;
+	padding-left: 35px;
+}
+.welcome-advantages-block {
+	font-size: 0;
+	margin-bottom: 37px;
+}
+.welcome-advantages-item {
+	display: inline-block;
+	max-width: 295px;
+	padding: 32px;
+	border: 1px solid #e3e3e3;
+}
+.item1 {
+	margin-right: 21px;
+}
+.welcome-advantages-item-box {
+	padding-left: 58px;
+}
+
+.welcome-advantages-title {
+	color: #37393f;
+	font-family: Poppins;
+	font-size: 20px;
+	font-weight: 600;
+}
+.icon1 {
+	background: url(../img/advantages.svg) no-repeat 0 0;
+}
+.icon2 {
+	background: url(../img/advantages2.svg) no-repeat 0 0;
+}
+.elcome-advantages-text {
+	color: #7d7d7d;
+	font-family: Inter;
+	font-size: 16px;
+	line-height: 1.35;
+}
+
+.welcome-button {
+	color: #fff;
+	font-weight: 600;
+	text-transform: capitalize;
+	background: #6b77e5;
+	padding: 22px 27px;
+	display: inline-block;
+	line-height: 1.2;
+}
+.latest-projects {
+	max-width: 1220px;
+	margin: 0 auto;
+	margin-bottom: 150px;
+}
+.latest-projects-subtitle-block {
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 14px;
+	font-size: 0;
+}
+.latest-projects-box {
+	width: 12px;
+	height: 12px;
+	background-color: #40ddb6;
+	display: inline-block;
+	margin-right: 6px;
+}
+.latest-projects-subtitle {
+	color: #37393f;
+	font-weight: 500;
+	line-height: 1.22;
+	display: inline-block;
+	font-size: 18px;
+}
+.latest-projects-title {
+	color: #37393f;
+	font-family: Poppins;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.21;
+	margin-bottom: 14px;
+	text-align: center;
+}
+.latest-projects-text {
+	color: #7d7d7d;
+	line-height: 1.46;
+	margin-bottom: 47px;
+	text-align: center;
+}
+.latest-projects-item-row1 {
+	font-size: 0;
+	margin-bottom: 58px;
+}
+.latest-projects-item-row2 {
+	font-size: 0;
+}
+.latest-projects-item {
+	min-width: 384px;
+	min-height: 501px;
+	padding-top: 525px;
+	display: inline-block;
+	margin-right: 34px;
+}
+.item01 {
+	background: url(../img/latest-projects/Photo1.png) no-repeat 0 0;
+}
+.item02 {
+	background: url(../img/latest-projects/Photo2.png) no-repeat 0 0;
+}
+.item03 {
+	background: url(../img/latest-projects/Photo3.png) no-repeat 0 0;
+	margin-right: 0px;
+}
+.item04 {
+	background: url(../img/latest-projects/Photo4.png) no-repeat 0 0;
+}
+.item05 {
+	background: url(../img/latest-projects/Photo5.png) no-repeat 0 0;
+}
+.item06 {
+	background: url(../img/latest-projects/Photo6.png) no-repeat 0 0;
+	margin-right: 0px;
+}
+.latest-projects-item-title {
+	font-size: 20px;
+	margin-bottom: 15px;
+	text-transform: capitalize;
+}
+.latest-projects-item-date {
+	font-size: 14px;
+	background: url(../img/date.svg) no-repeat 0 0;
+	padding-left: 25px;
+}
+.clothing {
+	max-width: 1240px;
+	margin: 0 auto;
+	margin-bottom: 150px;
+}
+.clothing-title-block {
+	font-size: 0;
+	background: url(../img/ellipse.png) no-repeat 0px 2px;
+}
+.clothing-title {
+	color: #3c4242;
+	font-family: "Core Sans C";
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 1.2;
+	letter-spacing: 0.56px;
+	margin-bottom: 37px;
+	margin-left: 21px;
+	display: inline-block;
+}
+.clothing-text-block {
+	padding-left: 21px;
+}
+.clothing-text-subtitle {
+	color: #807d7e;
+	font-family: "Core Sans C";
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.67;
+	letter-spacing: 0.4px;
+	margin-bottom: 37px;
+}
+
+.clothing-text-text {
+	margin-bottom: 39px;
+}
+.clothing-text-text p {
+	color: #807d7e;
+	font-family: "Causten";
+	font-size: 20px;
+	line-height: 1.67;
+	letter-spacing: 0.4px;
+	margin-bottom: 39px;
+}
+.clothing-text-text span {
+	font-weight: 700;
+}
+.everyday-fashion {
+	max-width: 1240px;
+	margin-bottom: 150px;
+}
+.everyday-fashion-block {
+	font-size: 0px;
+}
+.everyday-fashion-block-img1 {
+	padding: 183px 74px 0;
+	background: url(../img/everyday-fashion/img1.png) center / cover no-repeat;
+	display: inline-block;
+	width: 50%;
+	height: 640px;
+	vertical-align: top;
+}
+
+.everyday-fashion-block-img1-title {
+	color: #fff;
+	font-family: "Core Sans C";
+	font-size: 34px;
+	font-weight: 800;
+	line-height: 1.47;
+	letter-spacing: 0.208px;
+	padding-bottom: 30px;
+}
+.everyday-fashion-block-img1-text {
+	color: #fff;
+
+	font-family: "Causten";
+	font-size: 20px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	padding-bottom: 50px;
+}
+.everyday-fashion-block-img1-button {
+	padding: 12px 44px;
+	border-radius: 8px;
+	background: #fff;
+	color: #3c4242;
+	text-align: center;
+	font-family: "Causten";
+	font-size: 18px;
+	font-weight: 600;
+	width: 168px;
+	height: 46px;
+}
+
+.everyday-fashion-block-img2 {
+	background: url(../img/everyday-fashion/img2.png) center / cover no-repeat;
+	display: inline-block;
+	width: 50%;
+	height: 640px;
+	vertical-align: top;
+}
