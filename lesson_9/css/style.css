@@ -362,6 +362,14 @@
 	padding-top: 153px;
 	text-transform: capitalize;
 	text-align: start;
+	margin-bottom: 13px;
+}
+.jewels-title-block::after {
+	content: "";
+	display: block;
+	width: 304px;
+	height: 3px;
+	background: #78473b;
 }
 .jewels-items-row {
 	display: inline-block;
