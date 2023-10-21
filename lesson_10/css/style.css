@@ -1,0 +1,42 @@
+@import url(fonts.css);
+@import url(reset.css);
+
+body {
+	background-color: #787878;
+	font-family: "Raleway";
+	color: #fff;
+}
+.header {
+}
+.main {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.icons div {
+	height: 60px;
+}
+.icons img {
+	vertical-align: middle;
+}
+.content-svg span::before,
+.icons span::before {
+	content: " - ";
+}
+
+.content-svg div {
+	height: 100px;
+}
+.content-svg img {
+	vertical-align: middle;
+}
+.content-webp span {
+	/* display: block; */
+}
+.content-webp img {
+	max-width: 500px;
+	vertical-align: middle;
+}
+
+.content-webp div {
+	margin-bottom: 15px;
+}
