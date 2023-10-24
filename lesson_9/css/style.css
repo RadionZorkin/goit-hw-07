@@ -119,6 +119,12 @@
 	margin-bottom: 40px;
 	line-height: 1.46;
 }
+.consalting-text-last {
+	margin-bottom: 0px;
+}
+.consalting-text p:not(:last-child) {
+	margin-bottom: 16px;
+}
 .consalting-subtitle {
 	font-family: "Poppins";
 	font-size: 20px;
@@ -222,7 +228,8 @@
 	display: inline-block;
 	max-width: 386px;
 	padding: 58px 43px;
-	background: #f4f4f4;
+	background: #f4f4f4 0 200px;
+	margin-bottom: 40px;
 }
 .work-item:not(:last-child) {
 	margin-right: 31px;
@@ -357,9 +364,13 @@
 	font-size: 60px;
 	font-weight: 700;
 	line-height: 1.15;
-	max-width: 488px;
+	max-width: 493px;
+	/* max-width: 488px; */
+
 	display: inline-block;
 	padding-top: 153px;
+	padding-left: 5px;
+	padding-right: 5px;
 	text-transform: capitalize;
 	text-align: start;
 	margin-bottom: 13px;
@@ -376,13 +387,13 @@
 	text-align: start;
 }
 .jewels-item1 {
+	max-width: 334px;
 	display: inline-block;
 	vertical-align: top;
 	padding-top: 33px;
 	margin-right: 45px;
 }
 .jewels-item1-img {
-	width: 334px;
 	height: 381px;
 	border: 1px solid #000;
 	margin-bottom: 25px;
@@ -391,8 +402,8 @@
 	margin-bottom: 4px;
 }
 .jewels-item1-img img {
-	max-width: 334px;
-	height: 381px;
+	width: 100%;
+	height: 100%;
 	margin-top: 9px;
 	margin-left: 10px;
 }
@@ -403,6 +414,8 @@
 	line-height: 1.4;
 }
 .jewels-item2 {
+	max-width: 334px;
+
 	display: inline-block;
 }
 .jewels-item2-title-text {
@@ -414,14 +427,13 @@
 	margin-bottom: 31px;
 }
 .jewels-item2-img {
-	width: 334px;
 	height: 381px;
 	border: 1px solid #000;
 	margin-bottom: 25px;
 }
 .jewels-item2-img img {
-	max-width: 334px;
-	height: 381px;
+	width: 100%;
+	height: 100%;
 	margin-top: 9px;
 	margin-left: 10px;
 }
@@ -537,26 +549,9 @@
 	visibility: hidden;
 	background-color: red;
 }
-.game-block-1:hover + .game-block-2,
-.game-block-2:hover,
-.game-block-2:hover + .game-block-3,
-.game-block-3:hover,
-.game-block-3:hover + .game-block-4,
-.game-block-4:hover,
-.game-block-4:hover + .game-block-5,
-.game-block-5:hover,
-.game-block-5:hover + .game-block-6,
-.game-block-6:hover,
-.game-block-6:hover + .game-block-7,
-.game-block-7:hover,
-.game-block-7:hover + .game-block-8,
-.game-block-8:hover,
-.game-block-8:hover + .game-block-9,
-.game-block-9:hover,
-.game-block-9:hover + .game-block-10,
-.game-block-10:hover,
-.game-block-10:hover + .game-block-11,
-.game-block-11:hover {
+
+.game-block:hover + .game-block,
+.game-block:hover {
 	visibility: visible;
 }
 .game-wrapper:target {
