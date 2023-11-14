@@ -1,0 +1,333 @@
+@import url(fonts.css);
+@import url(reset.css);
+
+body {
+	background-color: #dbd4c7;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #fff;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+}
+[class*="__container"] {
+	max-width: 1250px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.header {
+	text-align: center;
+	background-color: #313438;
+	padding: 20px 0px;
+	margin-bottom: 25px;
+}
+
+.nav-bar {
+	position: relative;
+	font-size: 0px;
+}
+.nav-bar__item {
+	display: inline-block;
+	background-color: #446c7c;
+	border-radius: 10px;
+}
+.nav-bar__item:not(:last-child) {
+	margin-right: 30px;
+}
+.nav-bar__link {
+	border-radius: 10px;
+	display: inline-block;
+	padding: 20px 20px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: 25px;
+	font-weight: 600;
+	color: #c8cccc;
+}
+.nav-bar__item:hover {
+	background-color: #245c72;
+	color: #c8cccc;
+}
+.main {
+	background-color: #dbd4c7;
+}
+.main__container {
+}
+.main__title {
+	text-transform: uppercase;
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 20px;
+	color: #313438;
+	font-weight: 600;
+	letter-spacing: 4px;
+}
+.main__cards {
+	font-size: 0px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.main__card {
+	background-color: #576371;
+	display: inline-block;
+	min-width: 300px;
+	min-height: 300px;
+	margin-right: 15px;
+	border-radius: 10px;
+}
+.card {
+	border: 1px solid #473520;
+	border-radius: 10px;
+	padding: 10px 10px;
+	background-color: #7b5c37;
+	max-width: 100%;
+	min-height: 300px;
+}
+.main__card:nth-child(3n + 3) {
+	margin-right: 0px;
+}
+.main__card:nth-child(-n + 3) {
+	margin-bottom: 15px;
+}
+.card__title {
+	font-size: 20px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.main__card:hover .card--1 {
+	transform: translate(10px, 10px);
+}
+.main__card:hover .card--2 {
+	transform: scale(0.9, 0.9);
+}
+.main__card:hover .card--3 {
+	transform: scale(0.7, 0.7) rotate(45deg);
+}
+.main__card:hover .card--4 {
+	transform: scale(0.8, 0.8) skew(5deg, 5deg);
+}
+.main__card:hover .card--5 {
+	transform-origin: 0 0;
+	transform: rotate(45deg);
+}
+.main__card:hover .card--6 {
+	perspective-origin: 0 0;
+	transform: matrix(-1, 1, 3, 1, -77, -92);
+}
+
+/*Продублював селектор для зручності*/
+.main__card {
+	perspective: 100px;
+	perspective-origin: 50% 50%;
+}
+.main__card:hover .card--7 {
+	transform: rotatex(345deg);
+}
+.main__card:hover .card--8 {
+	transform: translate3d(5px, 10px, 25px);
+}
+.main__card:hover .card--9 {
+	transform: scale3d(2, 2, 2);
+}
+.main__card:hover .card--10 {
+	transform: rotate3d(50, 50, 500, 70deg);
+}
+.main__card--transform-style {
+	transform-style: preserve-3d;
+}
+.main__card:hover .card--11 {
+	transform: rotate3d(50, 50, 500, -70deg);
+}
+.main__card:hover .card--12 {
+	backface-visibility: hidden;
+	transform: rotateY(185deg);
+}
+:root {
+	--zorba: #9e9588;
+	--shark: #313438;
+	--sisal: #dbd4c7;
+	--yellow-metal: #7b5c37;
+	--irish-coffee: #583b21;
+	--cadet-blue: #b0b9c6;
+	--shuttle-gray: #576371;
+	--silver-sand: #c8cccc;
+	--bismark: #446c7c;
+}
+
+/* --------ship--------------------- */
+.main-ship {
+}
+.mark {
+}
+.ship-hero {
+	margin: 0 auto;
+	outline: 15px dotted #dbd4c7;
+	outline-offset: -8px;
+	height: 750px;
+	width: 1000px;
+	text-align: center;
+	perspective: 575px;
+	perspective-origin: center; /* За замовченням */
+	box-shadow: 0px 0px 4px #353536;
+}
+.ship-hero__sea {
+	background: linear-gradient(
+		to bottom,
+		#8597b1 0%,
+		#8597b1 9%,
+		#9ea9bb 17%,
+		#9ea9bb 17%,
+		#9ea9bb 21%,
+		#9ea9bb 21%,
+		#8c99b6 27%,
+		#c3c2c7 36%,
+		#bec4cb 43%,
+		#566374 50%,
+		#58788f 64%,
+		#2c3a47 86%
+	);
+	width: 100%;
+	height: 60%;
+}
+.ship-hero__land {
+	background: linear-gradient(
+		to bottom,
+		#caa26b 1%,
+		#bd9260 9%,
+		#bd9260 17%,
+		#ae834f 23%,
+		#ae834f 27%,
+		#ae834f 39%,
+		#ae834f 39%,
+		#82542c 53%,
+		#82542c 60%,
+		#ae834f 67%,
+		#ae834f 70%,
+		#82542c 77%,
+		#82542c 83%,
+		#3c2415 90%,
+		#1c1a0e 99%
+	);
+	width: 100%;
+	height: 40%;
+}
+.ship-elements {
+}
+.ship-hero__body {
+	position: absolute;
+	top: 245px;
+	left: 35px;
+	z-index: 5;
+	width: 700px;
+	height: 70px;
+	background: radial-gradient(ellipse at center, #737780 0%, #50555b 54%, #353439 93%);
+	border-radius: 10px 0 300px 150px;
+	transform: rotateY(339deg);
+	padding-top: 15px;
+	padding-left: 100px;
+	font-size: 45px;
+	font-weight: 600;
+	color: #b1b5be;
+	border: 2px solid #3e3d42;
+	box-shadow: 7px 9px 26px #3e3d42;
+}
+.ship-hero__body::before {
+	content: "";
+	width: 15px;
+	height: 20px;
+	position: absolute;
+	left: 665px;
+	top: 12px;
+	display: inline-block;
+	background-color: #303238;
+	border: 1px solid #1c1a0e;
+	border-radius: 7px 5px 10px 5px;
+	transform: rotateY(339deg);
+	box-shadow: -5px 5px 12px #353536;
+}
+.ship-hero__body::after {
+	content: "";
+	width: 20px;
+	height: 30px;
+	z-index: 6;
+	position: absolute;
+	left: 663px;
+	top: 32px;
+	display: inline-block;
+	background: url(../img/anchor.png) no-repeat 0 0 / 18px;
+	transform: rotateY(339deg);
+}
+.ship-hero__radar-behind {
+	position: absolute;
+	top: 235px;
+	left: 180px;
+	z-index: 4;
+	width: 145px;
+	height: 55px;
+	background: linear-gradient(45deg, #737780 0%, #50555b 54%, #2b2a2d 92%);
+
+	transform: rotateY(339deg);
+	border-top: 2px solid #3e3d42;
+	border-left: 2px solid #3e3d42;
+	border-radius: 5px 5px;
+	box-shadow: -5px -5px 12px #3e3d42;
+}
+.ship-hero__radar-behind::before {
+	content: "";
+	width: 70px;
+	height: 60px;
+	position: absolute;
+	left: 35px;
+	top: -60px;
+	z-index: 1;
+	display: inline-block;
+	background: linear-gradient(45deg, #2b2a2d 8%, #50555b 46%, #737780 100%);
+	background: linear-gradient(to right, #2b2a2d 0%, #737780 49%, #5d5b60 100%);
+
+	border-radius: 50% 50%;
+	border: 1px solid #3e3d42;
+	box-shadow: -5px -5px 12px #3e3d42;
+}
+.ship-hero__command-post {
+	position: absolute;
+	z-index: 3;
+	top: 190px;
+	left: 280px;
+	width: 310px;
+	height: 105px;
+	background: linear-gradient(45deg, #737780 0%, #50555b 54%, #2b2a2d 92%);
+	transform: rotateY(339deg) skew(0deg, 2deg);
+	border: 2px solid #3e3d42;
+	border-radius: 5px 5px;
+	box-shadow: -5px 5px 12px #555557;
+}
+.ship-hero__radar-top {
+	position: absolute;
+	z-index: 3;
+	top: 130px;
+	left: 379px;
+	width: 150px;
+	height: 140px;
+	transform: rotateY(340deg) skew(9deg, 5deg) rotateX(22deg);
+	background: linear-gradient(45deg, #737780 0%, #2b2a2d 54%, #2b2a2d 92%);
+	border: 2px solid #3e3d42;
+	border-radius: 5px 5px;
+	box-shadow: -5px -5px 12px #555557;
+}
+.ship-hero__radar-top::before {
+	content: "";
+	width: 70px;
+	height: 160px;
+	position: absolute;
+	left: 35px;
+	top: -160px;
+	z-index: 1;
+	display: inline-block;
+	background: linear-gradient(to right, #2b2a2d 0%, #737780 49%, #5d5b60 100%);
+	border-radius: 5px 5px;
+	border: 2px solid #3e3d42;
+	box-shadow: -5px -5px 12px #555557;
+}
