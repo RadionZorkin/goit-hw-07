@@ -511,6 +511,7 @@ select.form-columns__input {
   position: relative;
   align-items: center;
 }
+
 .pay-met__item input {
   position: absolute;
   top: 0;

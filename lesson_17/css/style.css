@@ -1,0 +1,284 @@
+/* Підключення шрифтів */
+@import url("fonts.css");
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+body {
+  background-color: #333;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+}
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper > main {
+  flex-grow: 1;
+}
+[class*="__container"] {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* -------HEADER------------------ */
+.header {
+}
+/* -------MAIN------------------ */
+.main {
+}
+.page {
+}
+/* -------popular------------------ */
+.popular {
+  background: #fefaf4;
+}
+.popular__container {
+  max-width: 1197px;
+}
+.popular__title {
+  color: #000;
+  font-family: "DM Serif Text";
+  font-size: 58px;
+  margin-bottom: 27px;
+}
+.popular__text {
+  color: #606060;
+  font-family: "Inter";
+  font-size: 20px;
+  margin-bottom: 53px;
+}
+.popular__items {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  margin: 0px -24px;
+}
+.popular__column {
+  padding: 0px 24px;
+  flex: 0 0 33.333%;
+}
+
+.popular__item {
+}
+.card {
+}
+.card__image {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 23px;
+}
+.card__image img {
+  background-color: #000;
+  aspect-ratio: 357 / 240;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card__title {
+  color: #000;
+  font-family: "DM Serif Text";
+  font-size: 24px;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+.card__text {
+  color: #000;
+  font-family: "Inter";
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+.card__bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.card__bottom img {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease-in-out;
+}
+.card__link {
+  color: #f55529;
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+@media (any-hover: hover) {
+  .card__bottom:hover .card__link {
+    color: #ad4022;
+  }
+  .card__bottom:hover .card__bottom img {
+    transform: scale(1.5);
+  }
+}
+.contacts {
+}
+.contacts__container {
+}
+
+.footer {
+}
+/* ------media popular----------- */
+@media (max-width: 740px) {
+  .popular__column {
+    flex: 0 0 50%;
+  }
+}
+@media (max-width: 494px) {
+  .popular__column {
+    flex: 0 0 100%;
+  }
+}
+/* ---------------------------- */
+/* 
+Адаптивна (чуйна) верстка - це не про 
+впихування дизайну під ПК у маленьки екрани,
+це про зручність у користуванні та оптимізацію
+*/
+
+/* Хороші практики адаптивної верстки: */
+/* 
+- Дивіться на екран, та відповідайте на питання "Чи зручно цим користуватись?"
+- Для того щоб робити верстку швидко, продумовуйте адаптив ще на ПК
+- Не ховайте від користувача найважливіші елементи
+- Один клік завжди кращий за два
+- Не робіть великі відступи. Зайвий простір тут непотрібен
+- Важливі навігаційні вузли робіть зручнішими (крупнішими), не змушуйте користувача цілитись
+- Оптимізаця простору та завантаження. Ховайте зайве
+- Оптимізовуйте або відмовляйтесь від анімацій
+- Долучайте свій власний досвід користувача, не повторюйте те що не зручно вам самим
+*/
+/* ---------------------------- */
+
+/*
+Полотно - певна ширина макету, 
+завжди має бути на всю ширину екрану.
+*/
+
+/* 
+Обмежуючий контейнер - об'єкт, який обмежений по ширині 
+та містить контент секції (сайту)
+*/
+
+/* 
+Медіа-запити - інструмент, який дозволяє 
+вности певні сміни при певних умовах
+*/
+/* Момент зміни стилів при якийсь умові ще називають breakpoint */
+/* Подробиці: 
+	https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#syntax
+	https://developer.mozilla.org/en-US/docs/Web/CSS/@media/aspect-ratio 
+	https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio 
+*/
+
+/* Анатомія @media: */
+/*
+@media (умова){
+	CSS-селектор{
+		CSS-параметр;
+		...
+		CSS-параметр;
+	}
+}
+
+Декілька пристроїв \ варіантів (АБО)
+@media screen, print{
+	CSS-селектор{
+		CSS-параметр;
+		...
+		CSS-параметр;
+	}
+}
+
+Декілька умов (ТА)
+@media (умова) and (умова){
+	CSS-селектор{
+		CSS-параметр;
+		...
+		CSS-параметр;
+	}
+}
+
+/* Умова - ширина екрану */
+/* Екрани =< 826px */
+/*
+@media (max-width: 826px) {
+	CSS-селектор{
+		CSS-параметр;
+		...
+		CSS-параметр;
+	}
+}
+/* Умова - ширина екрану */
+/* Екрани > 826px */
+/*
+@media (min-width: 826px) {
+	CSS-селектор{
+		CSS-параметр;
+		...
+		CSS-параметр;
+	}
+}
+/* Мультіумова */
+/* =< 826 та => 450 */
+/*
+@media (min-width: 450px) and (max-width: 826px) {
+	CSS-селектор{
+		CSS-параметр;
+		...
+		CSS-параметр;
+	}
+}
+*/
+
+/* Приклад: */
+
+/* 
+Примітівна адаптивна сітка
+!Не рекомендується, але легше для застосування\навчання
+*/
+/*
+[class*="__container"] {
+	max-width: 1220px;
+	margin: 0 auto;
+}
+*/
+/* Показуємо контент беспечно для усіх ПК моніторів */
+/*
+@media (max-width: 1250px) {
+	[class*="__container"] {
+		max-width: 960px;
+	}
+}
+*/
+/* Показуємо контент беспечно для усіх планшетів */
+/*
+@media (max-width: 991.98px) {
+	[class*="__container"] {
+		max-width: 740px;
+	}
+}
+*/
+/* Показуємо контент беспечно для усіх великих мобільних */
+/*
+@media (max-width: 767.98px) {
+	[class*="__container"] {
+		max-width: none;
+		padding-left: 15px;
+		padding-top: 15px;
+	}
+}
+*/
+/* Стилі для маленьких мобільних */
+/*
+@media (max-width: 479.98px) {
+}
+*/

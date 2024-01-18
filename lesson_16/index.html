@@ -21,35 +21,43 @@
               <form class="my-info__form form-my-info" method="GET" enctype="multipart/form-data" action="#">
                 <div class="form-my-info__columns">
                   <div class="form-my-info__block">
-                    <label for="fname">First Name*</label><br />
+                    <label for="fname">First Name*</label>
+                    <br />
                     <input class="form-my-info__item" type="text" id="fname" name="fname" placeholder="First Name" required />
                   </div>
                   <div class="form-my-info__block">
-                    <label for="fname">Last Name*</label><br />
+                    <label for="fname">Last Name*</label>
+                    <br />
                     <input class="form-my-info__item" type="text" id="lname" name="lname" placeholder="Last Name" required />
                   </div>
                   <div class="form-my-info__block">
-                    <label for="country">Country / Region*</label><br />
+                    <label for="country">Country / Region*</label>
+                    <br />
                     <input class="form-my-info__item" type="text" id="country" name="country" placeholder="Country / Region" required />
                   </div>
                   <div class="form-my-info__block">
-                    <label for="company">Company Name</label><br />
+                    <label for="company">Company Name</label>
+                    <br />
                     <input class="form-my-info__item" type="text" id="company" name="company" placeholder="Company Name" />
                   </div>
                   <div class="form-my-info__block">
-                    <label for="street">Street Address*</label><br />
+                    <label for="street">Street Address*</label>
+                    <br />
                     <input class="form-my-info__item" type="text" id="street" name="street" placeholder="House number and street name" required />
                   </div>
                   <div class="form-my-info__block">
-                    <label for="apartment">Apt, suite, unit</label><br />
+                    <label for="apartment">Apt, suite, unit</label>
+                    <br />
                     <input class="form-my-info__item" type="text" id="apartment" name="apartment" placeholder="apartment, suite, unit, etc. (optional)" />
                   </div>
                   <div class="form-my-info__block">
-                    <label for="city">City*</label><br />
+                    <label for="city">City*</label>
+                    <br />
                     <input class="form-my-info__item" type="text" id="city" name="city" placeholder="Town / City" required />
                   </div>
                   <div class="form-my-info__block">
-                    <label for="state">State*</label><br />
+                    <label for="state">State*</label>
+                    <br />
                     <select class="form-my-info__item" id="state" name="state" required>
                       <option value="" hidden selected>State</option>
                       <option value="state-1">Nebraska</option>
@@ -58,15 +66,19 @@
                     </select>
                   </div>
                   <div class="form-my-info__block">
-                    <label for="phone">Phone*</label><br />
-                    <input class="form-my-info__item" type="tel" id="phone" name="phone" placeholder="Phone" pattern="[0-9]{3}[0-9]{2}[0-9]{2}[0-9]{3}" required /><br />
+                    <label for="phone">Phone*</label>
+                    <br />
+                    <input class="form-my-info__item" type="tel" id="phone" name="phone" placeholder="Phone" pattern="[0-9]{3}[0-9]{2}[0-9]{2}[0-9]{3}" required />
+                    <br />
                   </div>
                   <div class="form-my-info__block">
-                    <label for="postal">Postal Code*</label><br />
+                    <label for="postal">Postal Code*</label>
+                    <br />
                     <input class="form-my-info__item" type="text" id="postal" name="postal" placeholder="Postal Code" required />
                   </div>
                   <div class="form-my-info__block form-my-info__block--w100">
-                    <label for="message">Delivery Instruction</label><br />
+                    <label for="message">Delivery Instruction</label>
+                    <br />
                     <textarea class="form-my-info__textarea" id="message" name="message" placeholder="Delivery Instruction"></textarea>
                   </div>
                   <div class="form-my-info__set-block">
@@ -157,11 +169,11 @@
               <p class="shipping-address__text">Select the address that matches your card or payment method.</p>
               <form class="shipping-address__radio-block radio-block" method="POST" enctype="multipart/form-data" action="#">
                 <div class="radio-block__item">
-                  <input type="radio" id="address-card" name="save-address" value="address-card" required autocomplete="off" checked />
+                  <input type="radio" id="address-card" name="save-address" value="address-card" required checked />
                   <label for="address-card">Same as Billing address</label>
                 </div>
                 <div class="radio-block__item">
-                  <input type="radio" id="shipping-address" name="save-address" value="shipping-address" required autocomplete="off" />
+                  <input type="radio" id="shipping-address" name="save-address" value="shipping-address" required />
                   <label for="shipping-address">Use a different shipping address</label>
                 </div>
               </form>
