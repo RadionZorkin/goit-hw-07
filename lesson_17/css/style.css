@@ -69,6 +69,9 @@ body {
 .popular__item {
 }
 .card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 .card__image {
   display: inline-block;
@@ -95,10 +98,13 @@ body {
   font-size: 16px;
   line-height: 1.6;
   margin-bottom: 8px;
+  flex-grow: 1;
 }
 .card__bottom {
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
+  gap: 10px;
 }
 .card__bottom img {
   display: inline-block;
@@ -241,6 +247,8 @@ body {
   font-weight: 700;
   line-height: 1.4;
   text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 62px;
 }
 .most-popular__items {
   display: flex;
@@ -279,6 +287,7 @@ body {
   text-align: center;
 }
 .most-popular__link {
+  display: inline-block;
   color: #fff;
   font-family: "Ubuntu";
   font-size: 16px;
@@ -316,22 +325,19 @@ body {
 }
 .why-choose__title {
   display: flex;
-  position: relative;
   color: rgb(255, 255, 255);
   font-family: "Inter";
   font-size: 18px;
   font-weight: 500;
   line-height: 0.81;
   margin-bottom: 13px;
+  align-items: center;
 }
 .why-choose__title:before {
   content: "";
-  position: inherit;
   width: 12px;
+  flex-basis: 12px;
   height: 12px;
-  bottom: -1px;
-  left: 0;
-  display: inline-block;
   background-color: #40ddb6;
   margin-right: 6px;
   text-transform: capitalize;
@@ -508,10 +514,67 @@ body {
   .why__body {
     max-width: 100%;
   }
+  .popular__items {
+    margin: 0px -18px;
+  }
+  .popular__column {
+    padding: 0px 18px;
+  }
+}
+@media (max-width: 1024px) {
+  .popular {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+  .products {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .most-popular {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .popular__items {
+    margin: 0px -12px;
+  }
+  .popular__column {
+    padding: 0px 12px;
+  }
+  .popular__title {
+    font-size: 48px;
+  }
+  .most-popular__title {
+    font-size: 48px;
+  }
+  .products__title {
+    font-size: 40px;
+  }
+  .why-choose__hero-title {
+    font-size: 26px;
+  }
+  .most-popular__text {
+    margin-bottom: 52px;
+  }
 }
 @media (max-width: 740px) {
+  .popular {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .products {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .most-popular {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .popular__items {
+    margin: 0px -8px;
+  }
   .popular__column {
     flex: 0 0 50%;
+    padding: 0px 8px;
   }
   .products__column {
     flex: 0 0 50%;
@@ -538,8 +601,35 @@ body {
   .block-statistics__item {
     flex: 0 1 50%;
   }
+  .popular__title {
+    font-size: 40px;
+  }
+  .most-popular__title {
+    font-size: 40px;
+  }
+  .products__title {
+    font-size: 36px;
+  }
+  .why-choose__hero-title {
+    font-size: 24px;
+  }
+  .most-popular__text {
+    margin-bottom: 28px;
+  }
 }
 @media (max-width: 494px) {
+  .popular {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .products {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .most-popular {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
   .popular__column {
     flex: 0 0 100%;
   }
@@ -556,6 +646,9 @@ body {
   }
   .block-statistics__item {
     flex: 0 1 100%;
+  }
+  .most-popular__text {
+    margin-bottom: 24px;
   }
 }
 /* ---------------------------- */
