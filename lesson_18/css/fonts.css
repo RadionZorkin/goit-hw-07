@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather:regular,700,700italic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Infant:500,600,700,700italic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=DM+Serif+Text:regular&display=swap");
+
+/* ----Просто як приклад ------- */
+/* @font-face {
+	font-family: "Causten";
+	src:
+		url(../fonts/causten-bold-webfont.woff2) format(woff2),
+		url(../fonts/causten-bold-webfont.woff) format(woff);
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
