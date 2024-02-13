@@ -180,6 +180,7 @@ body {
 }
 .hero {
   padding-top: 200px;
+  padding-bottom: 50px;
 }
 .hero__container {
   display: flex;
@@ -244,7 +245,7 @@ body {
 }
 .hero__images {
   display: flex;
-  flex-basis: 520px;
+  flex: 0 1 503px;
   gap: 30px;
 }
 .hero__img {
@@ -262,12 +263,185 @@ body {
   width: 100%;
   height: 100%;
 }
+/* -------------Jewellery----------------- */
+.page__jewellery {
+}
+.jewellery {
+  background: #502203;
+  padding-top: 98px;
+  padding-bottom: 58px;
+  position: relative;
+}
+.jewellery__container {
+}
+.jewellery__main-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Cormorant Infant", sans-serif;
+  color: #fff;
+}
+.jewellery__content {
+  flex-basis: 32%;
+  align-self: flex-start;
+  padding-right: 30px;
+  padding-top: 57px;
+}
+.jewellery__title {
+  font-weight: 700;
+  font-size: 78px;
+  line-height: 1.29;
+  margin-bottom: 26px;
+}
+.jewellery__link {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 24px;
+  padding: 15px 25px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  position: relative;
+}
+.jewellery__link:after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  top: 15px;
+  left: -8px;
+  border-radius: 4px;
+  width: 150px;
+  height: 51px;
+  background: #ffffff0f;
+  transition: 0.3s;
+}
+@media (any-hover: hover) {
+  .jewellery__link:hover:after {
+    top: 0px;
+    left: 0px;
+    height: 54px;
+  }
+}
+.jewellery__image {
+  flex-basis: 36%;
+  border-radius: 215px;
+  border: 1px solid #fff;
+  padding: 20px;
+}
+.jewellery__image img {
+  border-radius: 215px;
+  width: 100%;
+}
+.jewellery__body {
+}
+.body-content {
+  flex-shrink: 1;
+  flex-basis: 32%;
+  display: flex;
+  font-family: "Cormorant Infant", sans-serif;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-top: 76px;
+  align-self: flex-start;
+  align-self: stretch;
+  gap: 25px;
+  color: #fff;
+}
+.body-content__text {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.48;
+  flex-shrink: 1;
+}
+.body-content__item {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.2;
+  display: flex;
+  z-index: 8;
+  padding-left: 11px;
+  position: relative;
+  align-self: flex-end;
+  margin: auto 0;
+}
+
+.body-content__item:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0px, -50%);
+  height: 79%;
+  width: 1px;
+  background-color: #fff;
+}
+.jewellery__background-block {
+}
+.background-item {
+}
+.background-item__img {
+}
+
+.background-item__img img:first-child {
+  border: 1px solid #fff;
+  border-radius: 195px 195px 0 0;
+  padding-left: 5px;
+  position: absolute;
+  left: 40px;
+  bottom: 0px;
+}
+
+.background-item__img img:last-child {
+  border: 1px solid #fff;
+  border-radius: 195px 0 0 195px;
+  padding: 12px 0 12px 12px;
+  position: absolute;
+  right: 0px;
+  bottom: 55px;
+  z-index: 7;
+}
+
+.background-item__elements img:first-child {
+  position: absolute;
+  left: -61px;
+  top: -74px;
+}
+.background-item__elements img:last-child {
+  position: absolute;
+  right: 0;
+  top: 14%;
+  z-index: 6;
+}
 
 /* ===================footer============== */
 
 /* -----------@media----------------------- */
+@media (max-width: 1500px) {
+  .background-item__img img:first-child {
+    display: none;
+  }
+  .background-item__img img:last-child {
+    display: none;
+  }
+}
+@media (max-width: 1400px) {
+  .background-item__elements img:first-child {
+    display: none;
+  }
+  .background-item__elements img:last-child {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .jewellery {
+    background: #502203;
+    padding-top: 58px;
+    padding-bottom: 28px;
+    position: relative;
+  }
+}
 @media (max-width: 960px) {
-  /* -----header-------------- */
+  /* -----header---- */
   .header__container {
     min-height: 53px;
   }
@@ -368,24 +542,50 @@ body {
     margin-bottom: -1px;
   }
   /* --------------hero----------------- */
+  .hero {
+    padding-top: 100px;
+  }
   .hero__container {
     flex-direction: column;
     row-gap: 48px;
   }
-  .hero {
-    padding-top: 100px;
-  }
   .hero__content {
-    display: flex;
-    flex-direction: column;
     row-gap: 28px;
     flex: 0 1 auto;
   }
+
   .hero__buttons {
     gap: 30px;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+  }
+  .hero__images {
+    flex: 0 1 auto;
+  }
+  /* ---jewellery--- */
+  .jewellery__title {
+    font-size: 68px;
+  }
+  .jewellery__main-block {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 20px;
+  }
+  .jewellery__content {
+    text-align: center;
+    flex-basis: 100%;
+    padding-right: 0px;
+    padding-top: 0px;
+  }
+  .jewellery__image {
+    flex-basis: 50%;
+  }
+  .body-content {
+    flex-basis: 50%;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-top: 40px;
   }
 }
 @media (max-width: 720px) {
@@ -397,6 +597,38 @@ body {
   .hero__title {
     font-size: 48px;
     line-height: 1;
+  }
+  .hero__img:first-child {
+    padding-top: 30px;
+  }
+  .hero__img:last-child {
+    padding-bottom: 30px;
+  }
+  /* ---jewellery--- */
+  .jewellery {
+    padding-top: 48px;
+  }
+  .jewellery__title {
+    font-size: 48px;
+  }
+  .body-content__text {
+    font-size: 20px;
+  }
+  .jewellery__image {
+    padding: 15px;
+  }
+  .body-content__item {
+    font-size: 28px;
+  }
+}
+@media (max-width: 560px) {
+  .jewellery__image {
+    flex-basis: 85%;
+  }
+  .body-content {
+    flex-basis: 100%;
+    padding-left: 0px;
+    padding-top: 0px;
   }
 }
 @media (max-width: 440px) {
@@ -418,16 +650,44 @@ body {
   .hero {
     padding-top: 70px;
   }
+  .hero__container {
+    flex-direction: column;
+    row-gap: 28px;
+  }
   .hero__content {
     row-gap: 22px;
   }
   .hero__title {
     font-size: 38px;
   }
+  .hero__link {
+    font-size: 22px;
+  }
+  .hero__images {
+    gap: 20px;
+  }
   .hero__img:first-child {
     padding-top: 0px;
   }
   .hero__img:last-child {
     padding-bottom: 0px;
+  }
+  /* ---jewellery--- */
+  .jewellery__main-block {
+    row-gap: 15px;
+  }
+  .jewellery {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+  .jewellery__title {
+    font-size: 38px;
+    margin-bottom: 20px;
+  }
+  .jewellery__image {
+    flex-basis: 90%;
+  }
+  .body-content {
+    gap: 10px;
   }
 }
