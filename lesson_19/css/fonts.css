@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:800&display=swap");
+
+/* ----Просто як приклад ------- */
+@font-face {
+  font-family: "Core Sans C";
+  src: url(../fonts/CoreSansC-75ExtraBold.woff2) format(woff2);
+  font-display: swap;
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Core Sans C";
+  src: url(../fonts/CoreSansC-65Bold.woff2) format(woff2);
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Core Sans C";
+  src: url(../fonts/CoreSansC-55Medium.woff2) format(woff2);
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Causten";
+  src: url(../fonts/Causten-Regular.woff2) format(woff2);
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Causten";
+  src: url(../fonts/Causten-Medium.woff2) format(woff2);
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Causten";
+  src: url(../fonts/Causten-SemiBold.woff2) format(woff2);
+  font-display: swap;
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Causten";
+  src: url(../fonts/Causten-Bold.woff2) format(woff2);
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
