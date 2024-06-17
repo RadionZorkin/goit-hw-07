@@ -1,0 +1,29 @@
+// підключення математичних вираховувань
+@use "sass:math";
+// Шрифти
+@import"_fonts.scss";
+// Обнулення
+@import "_reset.scss";
+// Компоненти
+@import "_common.scss";
+// Функції
+@import "_function.scss";
+
+body{
+}
+
+.wrapper{
+  overflow: clip;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+//  ---Обмежуючий контейнер--- 
+[class*="__container"] {
+  //  ширина 1220px + 15px + 15px 
+  max-width: 1250px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
