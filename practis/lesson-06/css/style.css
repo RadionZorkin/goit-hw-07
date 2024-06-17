@@ -1,0 +1,131 @@
+@import url(fonts.css);
+@import url(reset.css);
+
+body {
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	background-color: rgb(85, 85, 85);
+}
+.header {
+	padding-top: 52px;
+	z-index: 2;
+	position: relative;
+	/* margin-bottom: 150px; */
+}
+.wrapper {
+	max-width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+}
+.header-blok {
+	font-size: 0;
+}
+.header-logo {
+	display: inline-block;
+	margin-right: 131px;
+}
+.header-logo img {
+	margin-top: -33px;
+	min-width: 69px;
+}
+
+.header-nav {
+	display: inline-block;
+	margin-right: 254px;
+}
+.header-nav li {
+	display: inline-block;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: 1.2px;
+}
+
+.header-nav li:hover {
+	color: #ff6c00;
+}
+.header-nav li:not(:last-child) {
+	margin-right: 30px;
+}
+.header-booking {
+	display: inline-block;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: 1.2px;
+}
+.header-booking-number {
+	display: inline-block;
+	margin-right: 40px;
+}
+.header-booking-number a:hover {
+	color: #ff6c00;
+}
+.header-booking-button {
+	display: inline-block;
+}
+.header-booking-button a {
+	padding: 12px 20px;
+	border-radius: 25px;
+	border: 1px solid #ff6c00;
+	text-transform: uppercase;
+	letter-spacing: 1.08px;
+}
+.header-booking-button a:hover {
+	color: #ff6c00;
+}
+
+.main {
+	margin-top: -85px;
+	z-index: 1;
+	position: relative;
+}
+
+.main-first-block {
+	font-size: 0;
+}
+.main-first-block-nav {
+	width: 100px;
+	height: 680px;
+	background-color: #fff;
+	display: inline-block;
+}
+.main-first-block-nav-list {
+	margin-top: 400px;
+	list-style-type: none;
+}
+.main-first-block-nav-list div {
+	transform: rotate(-90deg);
+	color: #303030;
+	font-size: 11px;
+	font-weight: 600;
+	letter-spacing: 2.2px;
+	margin-right: 40px;
+}
+.main-first-block-nav-list div:not(:last-child) {
+	margin-bottom: 98px;
+}
+.main-first-block-slider {
+	display: inline-block;
+	background: url(../img/slider-img-1.jpg);
+	width: 1070px;
+	height: 680px;
+}
+.main-first-block-slider-subtitle {
+	color: rgba(157, 164, 189, 0.6);
+	font-size: 11px;
+	font-weight: 600;
+	text-transform: uppercase;
+	display: inline-block;
+}
+.main-first-block-slider-title {
+}
+.main-first-block-slider-text {
+}
+.main-first-block-slider-buttons {
+}
+.main-first-block-slider-button-1 {
+}
+.main-first-block-slider-button-2 {
+}
