@@ -1,0 +1,38 @@
+@import url(fonts.css);
+/* @import url(reset.css); */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.transaction-table th,
+.transaction-table td {
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: left;
+}
+
+.transaction-table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+.transaction-table td {
+  background-color: #fff;
+}
+
+.transaction-table th:last-child,
+.transaction-table td:last-child {
+  text-align: center;
+}
+
+.color-picker__option {
+  width: 64px;
+  height: 64px;
+  margin: 20px;
+}

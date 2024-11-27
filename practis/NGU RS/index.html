@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Фінансові звіти</title>
+  <link rel="stylesheet" href="css/style.css"> <!-- Підключаємо стилі -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+</head>
+
+<body>
+
+  <h2>Форма для введення даних</h2>
+  <form id="compensation-form">
+    <label for="name">Ім'я:</label>
+    <input type="text" id="name" required><br>
+
+    <label for="surname">Прізвище:</label>
+    <input type="text" id="surname" required><br>
+
+    <label for="middleName">По батькові:</label>
+    <input type="text" id="middleName" required><br>
+
+    <label for="amount">Сума:</label>
+    <input type="number" id="amount" step="0.01" required><br>
+
+    <label for="taxRate">Ставка ПДФО (%):</label>
+    <input type="number" id="taxRate" step="0.01" required><br>
+
+    <label for="date">Дата:</label>
+    <input type="date" id="date" required><br>
+
+    <label for="referenceNumber">Номер довідки:</label>
+    <input type="text" id="referenceNumber" required><br>
+
+    <label for="orderNumber">Номер наказу:</label>
+    <input type="text" id="orderNumber" required><br>
+
+    <label for="orderDate">Дата наказу:</label>
+    <input type="date" id="orderDate" required><br>
+
+    <button type="submit">Додати звіт</button>
+  </form>
+
+  <h2>Звіти</h2>
+  <button id="export-xlsx">Експорт в Excel (.xlsx)</button>
+
+  <table id="reports-table" class="display">
+    <thead>
+      <tr>
+        <th>Ім'я</th>
+        <th>Прізвище</th>
+        <th>По батькові</th>
+        <th>Сума</th>
+        <th>Ставка ПДФО (%)</th>
+        <th>Сума ПДФО</th>
+        <th>Загальна сума</th>
+        <th>Дата</th>
+        <th>Номер довідки</th>
+        <th>Номер наказу</th>
+        <th>Дата наказу</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script> <!-- SheetJS -->
+  <script src="js/script.js"></script> <!-- Підключаємо зовнішній скрипт -->
+
+</body>
+
+</html>
